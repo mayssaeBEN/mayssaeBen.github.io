@@ -1,0 +1,675 @@
+* { 
+    margin : 0; 
+    padding : 0; 
+    box-sizing : border-box; 
+} 
+body { 
+    font-family : "Montserrat", sans-serif; 
+    overflow-x : hidden; 
+} 
+
+/* Menu  */ 
+
+nav { 
+    display : flex; 
+    align-items : center; 
+    width : 100%; 
+    height : 5em; 
+    background-color : #152237; 
+} 
+.Menu-Responsive { 
+    display : none; 
+} 
+.Logo { 
+    width : 84px; 
+    height : 31px; 
+    margin-left : 6.13em; 
+} 
+a { 
+    text-decoration : none; 
+} 
+.LienFormation { 
+    color : #FFFFFF; 
+    font-size : 0.94em; 
+    margin-left : 5.25em; 
+} 
+.FormulaireNavigation { 
+    background-color : #152237; 
+    color : #FFFFFF; 
+    border : 1px solid #FFFFFF; 
+    border-radius : 0.38em; 
+    width : 29.81em; 
+    height : 2.50em;  
+    display : flex; 
+    align-items : center; 
+    margin-left : 5.25em; 
+} 
+.Recherche { 
+    background-color : #152237; 
+    border : none; 
+    color : #FFFFFF; 
+    align-items : center; 
+    margin-left : 1.06em; 
+    width : 29.38em; 
+    flex : 1; 
+} 
+.Recherche::placeholder { 
+    font-family : "Montserrat", sans-serif; 
+    color : #FFFFFF; 
+    font-size : 0.94em; 
+    font-weight : 500; 
+} 
+.BouttonRecherche { 
+    background-color : #152237; 
+    border : none; 
+    justify-content : center; 
+    margin-right : 1.06em; 
+} 
+.fa-magnifying-glass { 
+    color : #FFFFFF; 
+    width : 100%; 
+} 
+.LienConnexion { 
+    background-color : #FFFFFF; 
+    color : #152237; 
+    font-size : 0.94em; 
+    font-weight : 500; 
+    width : 8.13em; 
+    height : 2.50em; 
+    border-radius : 0.38em; 
+    display : flex; 
+    justify-content : center; 
+    align-items : center; 
+    margin-left : 8.94em; 
+}  
+.LienInscription { 
+    width : 8.13em; 
+    height : 2.50em; 
+    font-size : 0.94em; 
+    font-weight : 500; 
+    border-radius : 0.38em; 
+    display : flex; 
+    justify-content : center; 
+    align-items : center; 
+    background : linear-gradient(to left, #44DD8A, #15B7E2); 
+    color : #152237; 
+    margin-left : 1.25em; 
+    margin-right : 3.155em; 
+} 
+
+/* Section Hero  */ 
+
+.Image { 
+    background : linear-gradient(to left, rgba(68, 221, 138, 0.6), rgba(21, 183, 226, 0.6)), url("assets/images/bg-header.png");  
+    width : 100%; 
+    height : 28.13em; 
+    display : flex; 
+    justify-content : center; 
+    align-items : center; 
+} 
+.ContenuSection { 
+    display : flex; 
+    flex-direction : column; 
+    justify-content : center; 
+    align-items : center; 
+}  
+.Titre { 
+    font-weight : 800; 
+    font-size : 3em; 
+    color : #152237; 
+    text-align : center; 
+    text-transform : uppercase; 
+} 
+.Sous-Titre { 
+    font-weight : 500; 
+    font-size : 1.25em; 
+    color : #000000; 
+    text-align : center; 
+    margin-top : 1em; 
+    text-transform : uppercase; 
+} 
+.BouttonSection { 
+    width : 8.13em; 
+    height : 2.50em; 
+    background-color : #FFFFFF; 
+    font-size : 15px; 
+    color : #152237; 
+    border : none; 
+    border-radius : 0.38em; 
+    margin-top : 1em;  
+} 
+
+/* Section formations populaires  */ 
+
+h2 { 
+    font-size : 2.25em; 
+    font-weight : 800; 
+    margin-top : 2em; 
+    margin-left : 6.06em; 
+    margin-bottom : 2em; 
+} 
+.ContenuBlocFormation { 
+    display : flex; 
+    gap : 4em; 
+    justify-content : center; 
+    /* flex-wrap : wrap;  */ 
+} 
+.BlocFormation { 
+    position : relative; 
+    width : 19.19em; 
+    height : 22.63em; 
+} 
+.BlocFormation h4 { 
+    margin-top : 1em; 
+} 
+.PrixFormationPopulaires { 
+    position : absolute; 
+    top : 9em; 
+    right : 0.63em; 
+    width : 7.50em; 
+    height : 1.97em; 
+    font-size : 1.25em; 
+    font-weight : 700; 
+    border-radius : 5.81em; 
+    background-color : #152237; 
+    color : #FFFFFF; 
+    display : flex; 
+    justify-content : center; 
+    align-items : center; 
+    gap : 0.5em; 
+    box-shadow : 0 0.25em 0.63em rgba(0, 0, 0, 0.15); 
+} 
+.AncienPrix { 
+    font-size : 0.63em; 
+    font-weight : 400; 
+    text-decoration : line-through; 
+} 
+.PrixFormationRécentes { 
+    position : absolute; 
+    top : 9em; 
+    right : 0.63em; 
+    width : 7.50em; 
+    height : 1.97em; 
+    font-size : 1.25em; 
+    font-weight : 700; 
+    border-radius : 5.81em; 
+    background-color : #FFFFFF; 
+    color : #152237; 
+    display : flex; 
+    justify-content : center; 
+    align-items : center; 
+    gap : 0.5em; 
+    box-shadow : 0 0.25em 0.63em rgba(0, 0, 0, 0.15); 
+} 
+h4 { 
+    font-weight : 700; 
+    font-size : 1.50em; 
+} 
+.fa-star { 
+    color : #FFC700; 
+} 
+.opacity-star { 
+    opacity : 50%; 
+} 
+.BouttonFormation { 
+    width : 14.06em; 
+    height : 2.50em; 
+    border : none; 
+    border-radius : 0.38em; 
+    font-family : "Montserrat", sans-serif; 
+    font-size : 1.13em; 
+    font-weight : 500; 
+    display : block; 
+    margin : 0 auto; 
+    margin-top : 2em; 
+    margin-bottom : 2em; 
+} 
+.Section2 { 
+    width : 100%; 
+    height : 39.50em; 
+} 
+#BouttonFormation1 { 
+    background-color : #152237; 
+    color : #FFFFFF; 
+} 
+
+/* Section formations récentes  */
+
+.Section3 { 
+    width : 100%; 
+    height : 100%; 
+    background-color : #152237; 
+    color : #FFFFFF; 
+    padding-bottom : 4em; 
+} 
+#BouttonFormation2 { 
+    background-color : #FFFFFF; 
+    color : #152237; 
+} 
+.Section3 h2 { 
+    padding-top : 2em; 
+} 
+/* Section avis cleint  */ 
+
+.Section4 { 
+    width : 100%; 
+    height : 31.37em; 
+} 
+.Section4 h2 { 
+    text-transform : uppercase; 
+    font-size : 2.50em; 
+    font-weight : 900; 
+    text-align : center; 
+    margin-left : 0; 
+} 
+.ContenuSection4 { 
+    display : flex; 
+    gap : 2em; 
+    margin-left : 9.38em; 
+    margin-right : 9.38em; 
+    justify-content : center; 
+} 
+.Section4 img { 
+    border-radius : 50%; 
+} 
+.Section4 p { 
+    line-height : 1.88em; 
+    margin-top : 0.5em; 
+} 
+/* Section avantages  */ 
+
+.Section5 { 
+    width : 100%; 
+    height : 40.06em; 
+    background-color : #F5F5F5; 
+    display : flex; 
+    gap : 4em; 
+} 
+.Section5 h2 { 
+    font-size : 2.50em; 
+    font-weight : 900; 
+    text-transform : uppercase; 
+    margin-left : 1em; 
+} 
+.ContenuAvantage { 
+    display : flex; 
+    align-items : center; 
+    margin-bottom : 1em; 
+} 
+.ContenuAvantage img { 
+    margin-left : 2em; 
+} 
+.Section5 ul { 
+    list-style-type : none; 
+} 
+.Section5 img { 
+    margin-right : 2em; 
+} 
+.ImageAvantages { 
+    margin-top : 5em; 
+} 
+/* Section de création de formations  */ 
+
+.Section6 { 
+    width : 100%; 
+    height : 40.06em; 
+    background-color : #44DD8A; 
+    display : flex; 
+    align-items : center; 
+} 
+.ImageFormation { 
+    margin-left : 2em; 
+} 
+.Section6 h2 { 
+    font-size : 2.50em; 
+    font-weight : 900; 
+    text-transform : uppercase; 
+    margin-left : 1em; 
+    margin-bottom : 1em; 
+} 
+.Section6 ul { 
+    list-style-type : none; 
+} 
+.ContenuFormation { 
+    display : flex; 
+    align-items : center; 
+    margin-bottom : 2em; 
+    gap : 2em; 
+} 
+.ContenuFormations img { 
+    margin-left : 2em; 
+} 
+.ImageSection6 {
+    width : 45.56em; 
+    height : 30.44em; 
+} 
+
+/* Section à propos de Klivio  */ 
+
+.Section7 { 
+    width : 100%; 
+    height : 46.25em; 
+    display : flex; 
+} 
+.PartieGauche { 
+    background-color : #F5F5F5; 
+    flex : 1; 
+} 
+.Section7 h2 { 
+    font-size : 2.50em; 
+    font-weight : 900; 
+    margin-left : 3em; 
+} 
+.Section7 p { 
+    font-size : 1.13em; 
+    line-height : 28px; 
+    margin-left : 6.44em; 
+    margin-right : 6.44em; 
+    margin-bottom : 2em; 
+} 
+.PartieDroite { 
+    display : flex; 
+    justify-content : center; 
+    align-items : center; 
+    background-color : #152237; 
+    flex : 1; 
+} 
+
+
+
+.Section8 { 
+    width : 100%; 
+    height : 41.44em; 
+} 
+.Section8 h2 { 
+    font-weight : 900; 
+    text-transform : uppercase; 
+    text-align : center; 
+    margin-left : 0; 
+    margin-bottom : 1em; 
+} 
+.Section8 hr { 
+    width : 21.88em; 
+    height : 0em; 
+    border : 1px solid #44DD8A; 
+    display : block; 
+    margin : 0 auto; 
+    margin-bottom : 4em; 
+} 
+.Section8 form { 
+    display : flex; 
+    justify-content : center; 
+    flex-wrap : wrap; 
+    gap : 3em; 
+} 
+.Inputs { 
+    width : 83.50em; 
+    display : flex; 
+    justify-content : center; 
+    gap : 7em; 
+} 
+.Section8 form input { 
+    background-color : #152237; 
+    border : none; 
+    width : 37.44em; 
+    height : 2.83em; 
+} 
+.Section8 form input::placeholder { 
+    font-family : "Montserrat", sans-serif; 
+    color : #FFFFFF; 
+    padding-left : 1.06em; 
+} 
+.Section8 form textarea { 
+    font-family : "Montserrat", sans-serif; 
+    background-color : #152237; 
+    width : 83.50em; 
+    height : 12.16em; 
+    color : #FFFFFF; 
+    border : none; 
+    padding-top : 1.06em; 
+    padding-left : 1.06em; 
+} 
+.Section8 form button { 
+    font-family : "Montserrat", sans-serif; 
+    font-weight : 500; 
+    width : 21.97em; 
+    height : 2.83em; 
+    background-color : #44DD8A; 
+    color : #152237; 
+    border : none; 
+    border-radius : 0.38em; 
+    margin-left : 5em; 
+} 
+
+
+footer { 
+    width : 100%; 
+    height : 30.56em; 
+    background-color : #152237; 
+    color : #FFFFFF; 
+} 
+.Ligne { 
+    width : 100%; 
+    height : 1.13em; 
+    background : linear-gradient(to left, #44DD8A, #15B7E2); 
+} 
+.PartieHaute { 
+    display : flex; 
+    justify-content : space-around; 
+    margin-top : 6em; 
+} 
+.LogoFooter { 
+    width : 15.19em; 
+    height : 5.44em; 
+} 
+.ContenuMentionsLégales { 
+    display : flex; 
+    flex-direction : column; 
+    line-height : 1.50em; 
+} 
+.TitreParagraphe { 
+    font-size : 0.94em; 
+    font-weight : 700; 
+    margin-bottom : 2em; 
+} 
+footer a { 
+    color : #FFFFFF; 
+} 
+.ContenuCoordonnée { 
+    display : flex; 
+    align-items : center; 
+    gap : 2em; 
+    line-height : 1.50em; 
+    margin-bottom : 0.5em; 
+} 
+.BouttonsFooter { 
+    display : flex; 
+    flex-direction : column; 
+    gap : 1.25em; 
+} 
+.BouttonsFooter a { 
+    margin-left : 0; 
+    margin-right : 0; 
+} 
+footer hr { 
+    width : 90%; 
+    height : 0.13em; 
+    background-color : #44DD8A; 
+    border : none; 
+    margin : 0 auto; 
+    margin-top : 2em; 
+    margin-bottom : 2em; 
+} 
+.PartieBasse { 
+    display : flex; 
+    justify-content : space-between; 
+    margin-left : 6em; 
+    margin-right : 6em; 
+} 
+.RéseauxSociaux { 
+    display : flex; 
+    align-items : center; 
+    gap : 2em; 
+} 
+@media all and (max-width : 960px) { 
+    .MenuResponsive { 
+        display : flex; 
+        justify-content : space-between; 
+    } 
+    .BurgerMenu { 
+        margin-right : 6.13em; 
+        cursor : pointer; 
+    } 
+    .MenuDesktop { 
+        display : none; 
+    } 
+    .Sous-Titre { 
+        margin-left : 0; 
+    } 
+    h2 { 
+        margin-left : 0; 
+        text-align : center; 
+    } 
+    .Section2 { 
+        width : 100%; 
+        height : 100%; 
+    } 
+    .ContenuBlocFormation { 
+        flex-direction : column; 
+        justify-content : center; 
+        align-items : center; 
+    } 
+    .Section3 { 
+        width : 100%; 
+        height : 100%; 
+    } 
+    .Section4 { 
+        width : 100%; 
+        height : 100%; 
+    } 
+    .ContenuSection4 { 
+        width : 100%; 
+        margin-left : 1.88em; 
+        margin-right : 1.88em; 
+        flex-direction : column; 
+        justify-content : center; 
+        align-items : center; 
+    } 
+    .Juliette { 
+        text-align : center;  
+    } 
+    .Camille { 
+        text-align : center; 
+    } 
+    .ContenuSection4 p { 
+        text-align : start; 
+        margin-left : 1.88em; 
+        margin-right : 1.88em; 
+    } 
+    .Section5 { 
+        width : 100%; 
+        height : 100%; 
+        flex-direction : column; 
+        padding-bottom : 2em; 
+    } 
+    .ImageAvantages { 
+        margin-top : 0; 
+        margin-left : 0; 
+        display : flex; 
+        justify-content : center; 
+    } 
+    .ImageAvantages img { 
+        width : 80%; 
+        height : 80%; 
+        margin-right : 0; 
+    } 
+    .Section6 { 
+        width : 100%; 
+        height : 100%; 
+        flex-direction : column; 
+        padding-top : 2em; 
+    } 
+    .ImageFormation { 
+        display : flex; 
+        justify-content : center; 
+        margin-left : 0; 
+    } 
+    .ImageSection6 { 
+        width : 80%; 
+        height : 80%; 
+    } 
+    .Section7 { 
+        width : 100%; 
+        height : 100%; 
+        flex-direction : column; 
+    } 
+    .Section7 h2 { 
+        margin-left : 0; 
+    } 
+    .Section7 p { 
+        margin-left : 1.50em; 
+        margin-right : 1.50em; 
+    } 
+    .PartieDroite { 
+        width : 100%; 
+        height : 23.13em; 
+        padding-top : 50%; 
+        padding-bottom : 50%; 
+    } 
+    .PartieDroite img {
+        width : 70%; 
+        height : 70%; 
+    } 
+    .Section8 { 
+        width : 100%; 
+        height : 100%; 
+        padding-bottom : 4em; 
+    } 
+    .Section8 form { 
+        flex-direction : column; 
+        gap : 2em; 
+        justify-content : center; 
+        text-align : center; 
+        align-items : center; 
+    } 
+    .Inputs { 
+        display : flex; 
+        flex-direction : column; 
+        width : 100%; 
+        gap : 2em; 
+        justify-content : center; 
+        align-items : center; 
+        margin : 0; 
+    } 
+    .Section8 form input { 
+        width : 80%; 
+        justify-content : center; 
+    } 
+    .Section8 form textarea { 
+        width : 80%; 
+        justify-content : center; 
+    } 
+    .Section8 form button { 
+        width : 80%; 
+        margin-left : 0; 
+    } 
+    footer { 
+        width : 100%; 
+        height : 100%; 
+    } 
+    .PartieHaute { 
+        flex-direction : column; 
+        justify-content : center; 
+        align-items : center; 
+        gap : 4em; 
+    } 
+    .BouttonsFooter { 
+        display : none; 
+    } 
+    footer hr { 
+        display : none; 
+    } 
+    .PartieBasse { 
+        display : none; 
+    } 
+} 
